@@ -10,7 +10,7 @@ _coming soon ..._
 
 ## Documentation summary
 
-- The concept behind Cursed Ascent
+- [The concept behind Cursed Ascent](concept.md)
 - Implemented features for the Hackathon
 - Short term and long term objectives
 - Game interface
