@@ -3,3 +3,4 @@
 - [Home](/)
 - [Getting Started](getting-started.md)
 - [The Concept](concept.md)
+- [Contract Diagrams](contract-diagrams.md)
