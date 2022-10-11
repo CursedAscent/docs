@@ -1,3 +1,7 @@
 {
-  "conventionalCommits.scopes": ["init", "getting-started"]
+  "conventionalCommits.scopes": [
+    "init",
+    "getting-started",
+    "concept"
+  ]
 }
