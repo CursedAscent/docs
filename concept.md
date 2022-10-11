@@ -1,6 +1,6 @@
 # The concept behind Cursed Ascent
 
-### What is Cursed Ascent ?
+### What is Cursed Ascent?
 
 Cursed Ascent is a roguelite deckbuilding game. You must ascend through dangerous spires and defeat the boss at its top to win.
 A spire is composed of several rooms, with various enemies, and other mysterious encounters...
@@ -24,14 +24,14 @@ We designed a contract architecture that allows anyone to build on top of our sy
 
 ![Contract Architecture](Entities_Diagram.jpg)
 
-- Cards are NFTs stored in a **CardCollection** contract. it implements additional on-chain data like the effects of a card, or its rarity. On top of that, the metadata provides adaptable descriptions, so any interface can retrieve it and changes the dynamic values (for example, an Attack card will deal more damages if the player has more strength). The Cursed Ascent SDK will provide helper functions to implement this logic.
+- Cards are NFTs stored in a **CardCollection** contract. It implements additional on-chain data like the effects of a card, or its rarity. On top of that, the metadata provides adaptable descriptions, so any interface can retrieve it and changes the dynamic values (for example, an Attack card will deal more damages if the player has more strength). The Cursed Ascent SDK will provide helper functions to implement this logic.
 - Enemies are also NFTs, stored in an **EnemyCollection**. it works the same as CardCollection.
 - Scenes are the description of an encounter in the spire. They are stored as NFT in a **SceneCollection**, and each token is linked to its own **SceneLogic** contract. This allows the GameMode to execute personalized logics and create unique encounters.
 - Cards and Scenes are compiled in their respective **Catalog**. This way, a GameMode can registers all the collections it will use to implement its game logic. Plus, it provides a decentralized & public way to retrieve all data related to a GameMode.
   Enemies are retrieved by SceneLogic contracts.
 - The **GameMode** contract is the only main entrypoint for application to interact with the game. It implements its own saving system, room handling, player instanciation and deck management. For all these tasks we implemented:
   - a **SessionManager** library, to save on-chain the hash of the game state for any player (game state are stored off-chain by the user, and is passed as parameter on every transaction).
-  - a **Rooms** library, that generate and pack the map layout in felts (number of rooms & floor, and connections between them).
+  - a **Rooms** library, that generates and packs the map layout in felts (number of rooms & floor, and connections between them).
   - a **PRNG** library, based on [Realm Xoroshiro128\*\* implementation](https://github.com/BibliothecaForAdventurers/realms-contracts/blob/main/contracts/utils/xoroshiro128_starstar.cairo).
   - a **PlayerBuilder** library that instanciate the player statistics and base deck according to its Adventurer NFT.
 - Finally, we implements a **CardBuilder**, a **EnemyBuilder**, and a **SceneBuilder** library to easily retrieve data between contracts.

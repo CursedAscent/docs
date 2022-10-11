@@ -1,14 +1,14 @@
 # Getting Started
 
-## How to play ?
+## How to play?
 
 you can try the demo [here](https://cursed-ascent.vercel.app/library).
 
-## Make your own Game Mode using Cursed Ascent architecture
+## Make your own Game Mode
 
 _coming soon ..._
 
-## Documentation summary
+## Docs summary
 
 - [The concept behind Cursed Ascent](concept.md)
 - Implemented features for the Hackathon
