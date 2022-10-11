@@ -22,7 +22,7 @@ The player in Cursed Ascent is based on the [BibliothecaDAO's Adventurer module]
 
 We designed a contract architecture that allows anyone to build on top of our system. Take a look at this diagram:
 
-![Contract Architecture](Entities_Diagram.jpg)
+![Contract Architecture](/static/images/Entities_Diagram.jpg)
 
 - Cards are NFTs stored in a **CardCollection** contract. It implements additional on-chain data like the effects of a card, or its rarity. On top of that, the metadata provides adaptable descriptions, so any interface can retrieve it and changes the dynamic values (for example, an Attack card will deal more damages if the player has more strength). The Cursed Ascent SDK will provide helper functions to implement this logic.
 - Enemies are also NFTs, stored in an **EnemyCollection**. it works the same as CardCollection.
