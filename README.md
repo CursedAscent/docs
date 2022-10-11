@@ -1,3 +1,7 @@
+<p align="center">
+  <img width="300" src="/static/images/cursed_skull_fit.png">
+</p>
+
 # Cursed Ascent
 
 **Cursed Ascent** is a roguelite deck-building game hosted on starknet testnet. The goal is to explore procedurally generated spires and fight all kinds of foes using cards.
