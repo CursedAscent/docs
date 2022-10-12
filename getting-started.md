@@ -2,7 +2,7 @@
 
 ## How to play?
 
-you can try the demo [here](https://cursed-ascent.vercel.app/library).
+you can try the demo [here](https://cursed-ascent.vercel.app).
 
 ## Make your own Game Mode
 
