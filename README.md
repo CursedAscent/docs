@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="300" src="/static/images/cursed_skull_fit.png">
+  <img width="300" src="/docs/static/images/cursed_skull_fit.png">
 </p>
 
 # Cursed Ascent
